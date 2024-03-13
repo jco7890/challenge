@@ -1,10 +1,10 @@
-#1
+#1 - Add a prefix to word
 def add_prefix_un(word):
     return "un"+word
 word = input("enter word: ")
 print(add_prefix_un(word))
-#2
 
+#2 - Add prefixes to word groups
 def make_word_groups(vocab_words):
     prefix = vocab_words[0]
     other_words = vocab_words[1:]
@@ -16,10 +16,7 @@ vocab_words = list.split()
 new_list = make_word_groups(vocab_words)
 print(new_list)
 
-
-
-#3
-
+#3 - Remove a suffix from a word
 def remove_suffix_ness(word1):
     if word1.endswith("iness"):
         new_word = word1[:-5]+"y"
@@ -34,7 +31,7 @@ word1 = input("enter word: ")
 new_word = remove_suffix_ness(word1)
 print(new_word)
 
-#4
+#4 - Extract and transform a word
 def adjective_to_verb(sentence, index):
     word_list = sentence.split()
     adjective = word_list[index]
